@@ -10,12 +10,12 @@ public class 两数之和_001 {
                 }
             }
         return null;
-        }
+    }
     
     public static void main(String[] args) {
         int[] nums = {2, 7 ,11, 15};
         int target = 17;
         int[] result = twoSum(nums, target);
         System.out.println("target: " + target + " = nums[" + result[0] +"] + nums[" + result[1] + "]" );
-        }
+    }
 }
