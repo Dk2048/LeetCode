@@ -5,10 +5,10 @@ public class 罗马数字转整数_013 {
         if (s == null || s.length() == 0) {
             return 0;
         }
-        int result = getNumber(s.charAt(0));//首位开始为最大数，不存在减
+        int result = getNumber(s.charAt(0));//先算首位的值
         for(int i = 0; i < s.length() - 1; i++) {
             if (getNumber(s.charAt(i + 1)) > getNumber(s.charAt(i))) {
-                //大数前面最多出现一次小数，当检测到
+                //后一位大于前一位时，因为计算了2次，减去前一位 *2 的值
                 result += getNumber(s.charAt(i + 1)) - 2 * getNumber(s.charAt(i));
             } else {
                 result += getNumber(s.charAt(i + 1));
