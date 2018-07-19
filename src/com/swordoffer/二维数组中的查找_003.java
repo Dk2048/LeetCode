@@ -13,7 +13,6 @@ public class 二维数组中的查找_003 {
     }
     //遍历法，2层for循环进行查找
     private static boolean find1(int[][] array, int target) {
-        // TODO Auto-generated method stub
         for(int i = 0; i < array.length; i++) {
             for(int j = 0; j < array[0].length; j++) {
                 if (target == array[i][j]) {
